@@ -37,7 +37,7 @@ This repository provides a ready-to-run `docker-compose.yml` and helper scripts 
 ### 1. Clone the repo on both nodes
 
 ```bash
-git clone https://github.com/zurih/DeepSeek-V4-Flash-Dual-DGX-Spark-1M-Context.git
+git clone https://github.com/MiaAI-Lab/DeepSeek-V4-Flash-Dual-DGX-Spark-1M-Context.git
 cd DeepSeek-V4-Flash-Dual-DGX-Spark-1M-Context
 ```
 
@@ -55,8 +55,8 @@ Edit `.env` to match your cluster:
 |----------|-------------|---------|
 | `NODE_RANK` | `0` for head (spark1), `1` for worker (spark2) | `0` |
 | `HEADLESS` | Set to `1` on worker nodes | *(empty for head)* |
-| `MASTER_ADDR` | IP address of the head node (spark1) | `169.254.109.196` |
-| `WORKER_HOST` | IP address of the worker node (spark2) | `169.254.122.228` |
+| `MASTER_ADDR` | IP address of the head node (spark1) | `192.168.1.100` |
+| `WORKER_HOST` | IP address of the worker node (spark2) | `192.168.1.101` |
 | `HF_CACHE` | Path to your HuggingFace cache | `${HOME}/.cache/huggingface` |
 | `NCCL_IB_HCA` | InfiniBand HCA device (run `ibdev2netdev -v`) | `rocep1s0f1` |
 | `NCCL_SOCKET_IFNAME` | Network interface for socket comms | `enp1s0f1np1` |
