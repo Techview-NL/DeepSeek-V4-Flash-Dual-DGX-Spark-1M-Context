@@ -2,6 +2,9 @@
 
 Deploy [DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) — a Mixture-of-Experts (MoE) reasoning model — across **two NVIDIA DGX Spark** nodes with **1 million token context length**, InfiniBand interconnect, and FP8 KV-cache.
 
+
+<a href='https://ko-fi.com/Z8Z3SPLOD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ## Overview
 
 This repository provides a ready-to-run `docker-compose.yml` and helper scripts that launch a vLLM inference server serving DeepSeek V4 Flash. The setup uses:
