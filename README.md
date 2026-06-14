@@ -17,6 +17,8 @@ This repository provides a ready-to-run `docker-compose.yml` and helper scripts 
 - **Prefix caching** and **FlashInfer autotune**
 - **Tool calling** and **reasoning** support (DeepSeek V4 parsers)
 
+> **Default generation config:** The `docker-compose.yml` sets `--override-generation-config '{"temperature":0.6,"top_p":0.95}'` — tuned for coding tasks. Remove this line to use DeepSeek V4 Flash's default sampling parameters.
+
 ## Requirements
 
 ### Hardware
